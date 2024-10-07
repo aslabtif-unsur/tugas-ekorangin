@@ -1,0 +1,14 @@
+{
+   "name": "ekorangin",
+   "version": "1.0.0",
+   "main": "index.js",
+   "scripts": {
+      "test": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+   },
+   "author": "",
+   "license": "ISC",
+   "description": "",
+   "devDependencies": {
+      "tailwind": "^4.0.0"
+   }
+}
