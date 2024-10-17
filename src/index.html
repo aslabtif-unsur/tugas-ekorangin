@@ -4,20 +4,65 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Latihan Tailwind CSS</title>
-   <!-- <link rel="stylesheet" href="./output.css"> -->
+   <link rel="stylesheet" href="./output.css">
 </head>
-<body class="...">
-   <section id="title" class="...">
-      <h1 class="...">Todo List Application</h1>
+<body class="flex flex-col items-center space-y-4 p-8">
+
+   <!-- Todo List Application -->
+   <section id="title" class="w-full">
+      <h1 class="font-mono text-3xl text-gray-900 text-center p-2">
+         Todo List Application
+      </h1>
    </section>
-   <section id="input" class="...">
+
+   <section id="input" class="flex space-x-2">
       <input type="text" name="assignment" id="assignment" 
-             class="..."
+             class="border-2 border-gray-300 p-2 rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
              placeholder="Inputkan tugas yang akan dikerjakan ...">
       <input type="button" id="btn-tambah" value="TAMBAH"
-             class="...">
+             class="bg-blue-500 text-white font-bold p-2 rounded-lg w-24 hover:bg-blue-600">
    </section>
-   <section id="output" class=""></section>
+   
+   <!-- Daftar Tugas -->
+   <section id="output" class="w-full flex flex-col items-center space-y-2">
+      
+      <!-- Container untuk semua daftar tugas -->
+      <div class="border border-gray-300 rounded-lg w-1/2 p-4 space-y-2">
+         <!-- Pekerjaan Senin -->
+         <div class="flex justify-between items-center">
+            <span class="text-lg">Pekerjaan Senin</span>
+            <div class="space-x-2">
+               <button class="bg-green-500 text-white font-bold py-1 px-3 rounded-lg">SELESAI</button>
+               <button class="bg-red-500 text-white font-bold py-1 px-3 rounded-lg">HAPUS</button>
+            </div>
+         </div>
+
+         <!-- Pekerjaan Selasa -->
+         <div class="flex justify-between items-center">
+            <span class="text-lg">Pekerjaan Selasa</span>
+            <div class="space-x-2">
+               <button class="bg-green-500 text-white font-bold py-1 px-3 rounded-lg">SELESAI</button>
+               <button class="bg-red-500 text-white font-bold py-1 px-3 rounded-lg">HAPUS</button>
+            </div>
+         </div>
+
+         <!-- Mabar Minggu -->
+         <div class="flex justify-between items-center">
+            <span class="text-lg">Mabar Minggu</span>
+            <div class="space-x-2">
+               <button class="bg-green-500 text-white font-bold py-1 px-3 rounded-lg">SELESAI</button>
+               <button class="bg-red-500 text-white font-bold py-1 px-3 rounded-lg">HAPUS</button>
+            </div>
+         </div>
+      </div>
+   </section>
+   
    <script src="main.js"></script>
 </body>
+
+   <section id="output" class="w-full"></section>
+   
+   <script src="main.js"></script>
+</body>
+
 </html>
